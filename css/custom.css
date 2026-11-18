@@ -1,0 +1,87 @@
+/* Custom CSS for KavaCraft - Educational Project */
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #faf7f2;
+    color: #2c221e;
+}
+
+/* 1. Фонова заливка та внутрішні відступи для шапки (Hero) */
+.hero-coffee {
+    background: linear-gradient(135deg, #2c1e18 0%, #4e342e 55%, #6d4c41 100%);
+    padding: 5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-coffee h1 {
+    font-size: 2.75rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+/* 2. Стилізація карток товарів: відступи, фон, тінь та плавний перехід */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #eadfd6;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(62, 39, 35, 0.14);
+}
+
+.product-card .card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+/* 3. Самостійно освоєні властивості: градієнтна заливка, заокруглення кнопок та зміна кольору при :hover */
+.btn-coffee {
+    background: linear-gradient(90deg, #6d4c41 0%, #a1623b 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.55rem 1.4rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-coffee:hover,
+.btn-coffee:focus {
+    background: linear-gradient(90deg, #4e342e 0%, #8d4e2a 100%);
+    color: #ffffff;
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(109, 76, 65, 0.35);
+}
+
+/* Блок партнерських посилань та футер */
+.partners-section {
+    background-color: #f2ebe3;
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+.partner-link-card {
+    background-color: #ffffff;
+    border: 1px solid #e2d6ca;
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.partner-link-card:hover {
+    border-color: #8d4e2a;
+    transform: translateY(-3px);
+}
+
+.disclaimer-box {
+    background-color: #1f1612;
+    border-top: 2px solid #8d4e2a;
+    padding: 1.5rem 0;
+    color: #e6dcd3;
+    font-size: 0.92rem;
+}
